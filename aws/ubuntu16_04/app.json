@@ -1,0 +1,22 @@
+{
+  "builders": [{
+    "type": "amazon-ebs",
+    "vpc_id": "{{user `vpc_id`}}",
+    "region": "ap-northeast-1",
+    "subnet_id": "{{user `subnet_id`}}",
+    "source_ami": "ami-0d74386b",
+    "instance_type": "c4.large",
+    "ssh_username": "ubuntu",
+    "ami_name": "packer-study-{{timestamp}}"
+  }],
+  "provisioners": [
+    {
+      "type": "shell",
+      "execute_command": "{{ .Vars }} sudo -E sh '{{ .Path }}'",
+      "scripts": [
+        "./scripts/ubuntu16_04/common.sh",
+        "./scripts/ubuntu16_04/rbenv.sh"
+      ]
+    }
+  ]
+}
