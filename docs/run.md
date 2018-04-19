@@ -4,8 +4,8 @@
 - [/aws/ubuntu16_04/app.json](/aws/ubuntu16_04/app.json)
 
 ## 実行スクリプトの確認
-- [scripts/ubuntu16_04/common.sh](scripts/ubuntu16_04/common.sh)
-- [scripts/ubuntu16_04/rbenv.sh](scripts/ubuntu16_04/rbenv.sh)
+- [/scripts/ubuntu16_04/common.sh](scripts/ubuntu16_04/common.sh)
+- [/scripts/ubuntu16_04/rbenv.sh](scripts/ubuntu16_04/rbenv.sh)
 
 ## 環境変数ファイルを作成
 
